@@ -1,0 +1,723 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+.myColor{
+    color: #888;
+}
+@font-face {
+    font-family: SuisseIntl;
+    src: url(fonts/Suisse/SuisseIntl-Regular.woff2) format("woff2"),
+      url(fonts/Suisse/SuisseIntl-Regular.woff) format("woff"),
+      url(fonts/Suisse/SuisseIntl-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: SuisseIntl;
+    src: url(fonts/Suisse/SuisseIntl-Regular.woff2) format("woff2"),
+      url(fonts/Suisse/SuisseIntl-Regular.woff) format("woff"),
+      url(fonts/Suisse/SuisseIntl-Regular.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: swap;
+  }
+body {
+    color: white;
+    overflow-x: hidden;
+    font-family: SuisseIntl, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+img {
+    aspect-ratio: auto 100/100;
+}
+
+.bg-dark {
+    background-color: black !important;
+}
+
+.cointainer-fluid {
+    margin: 0;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white;
+}
+
+.nav-link {
+    font-size: 12px;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: white;
+}
+
+.contactbtn {
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 3px;
+    -webkit-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: calc((116 / var(--gfs)) * 100 * 1vw);
+   
+    font-size: calc((16 / var(--gfs)) * 100 * 1vw);
+}
+
+.contactbtn:hover {
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+
+}
+
+.downbtn {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgba(243, 239, 239, 0.2);
+    border-top-left-radius: 10px;
+        padding:calc((27 / var(--gfs)) * 100 * 1vw);
+        font-size: calc((24 / var(--gfs)) * 100 * 1vw);
+
+   
+
+}
+
+.color-burl {
+    color: gray;
+}
+
+.bt-0 {
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.sub-cointainer-main{
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.sub-cointainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -ms-grid;
+    display: grid;
+    bottom: 0;
+
+}
+
+
+
+
+
+
+/*  */
+.card-coustm {
+    background-color: #0e0e0e;
+    -webkit-box-shadow: 0 0 3px black;
+            box-shadow: 0 0 3px black;
+    -webkit-filter: blur(0.1);
+            filter: blur(0.1);
+    /* Adjust the width and margin as needed */
+   
+    margin: auto;
+    /* Adjust the margin as needed */
+   border-radius: 7px;
+   height: calc((745 / var(--gfs)) * 100 * 1vw);
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: relative;
+
+}
+
+.bg-brown {
+    position: relative;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px dotted rgb(116, 75, 75);
+
+}
+
+
+
+.accordion {
+    border-radius: none;
+}
+
+.accordion-item {
+    background: none;
+    color: white;
+    border: none;
+    border-radius: 0 !important;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.accordion-header {
+    background-color: none;
+    color: white;
+    border-radius: 0;
+
+}
+
+.accordion-button,
+.collapsed {
+    background: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    border-top: 1px solid white;
+
+}
+
+.accordion-button {
+    background: transparent !important;
+    color: white !important;
+    border: none;
+    content: none;
+    outline: none !important;
+    border-radius: 0;
+    background-image: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    border-top: 1px solid white !important;
+    font-size: 1.5rem;
+}
+
+
+
+.accordion-button::after {
+    content: "+";
+    -ms-flex-negative: 5;
+        flex-shrink: 5;
+    margin-left: auto;
+    -webkit-transform: "all 0.2s linear";
+        -ms-transform: "all 0.2s linear";
+            transform: "all 0.2s linear";
+    background-image: none;
+    background-size: 0;
+
+}
+
+.accordion-button:hover::after {
+    -webkit-transform: "all 0.2s linear";
+        -ms-transform: "all 0.2s linear";
+            transform: "all 0.2s linear";
+
+
+}
+
+.accordion-button>.collapsed::after {
+    content: "x";
+    -webkit-transform: "all 0.2s linear";
+        -ms-transform: "all 0.2s linear";
+            transform: "all 0.2s linear";
+
+    -webkit-transition: border 0.2s linear;
+
+    -o-transition: border 0.2s linear;
+
+    transition: border 0.2s linear;
+}
+
+
+.accordion-button:not(.collapsed)::after {
+    content: "x";
+
+    -webkit-transform: "all 0.2s linear";
+
+        -ms-transform: "all 0.2s linear";
+
+            transform: "all 0.2s linear";
+    background-image: none;
+    text-align: center;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+}
+
+#headingfive {
+    border-bottom: 1px solid white !important;
+    border-radius: 0;
+}
+
+
+.accordion {
+    --bs-accordion-color: #f8f9fa;
+    --bs-accordion-bg: #fff;
+    --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+    --bs-accordion-border-color: var(--bs-border-color);
+    --bs-accordion-border-width: 1px;
+    --bs-accordion-border-radius: 0.375rem;
+    --bs-accordion-inner-border-radius: calc(0.375rem - 1px);
+    --bs-accordion-btn-padding-x: 1.25rem;
+    --bs-accordion-btn-padding-y: 1rem;
+    --bs-accordion-btn-color: #edf0f3;
+    --bs-accordion-btn-bg: var(--bs-accordion-bg);
+    --bs-accordion-btn-icon: "";
+    --bs-accordion-btn-icon-width: "";
+    --bs-accordion-btn-icon-transform: rotate(-180deg);
+    --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+    --bs-accordion-btn-active-icon: "";
+    --bs-accordion-btn-focus-border-color: #f5f7f9;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    --bs-accordion-body-padding-x: 1.25rem;
+    --bs-accordion-body-padding-y: 1rem;
+    --bs-accordion-active-color: #f6f9fe;
+    --bs-accordion-active-bg: #e7f1ff;
+}
+
+
+
+
+
+/*  */
+.coustm-subheading {
+    top: 0;
+}
+
+:root {
+    --gfs: 1920;
+}
+
+:root {
+    --gfsh: 1800;
+}
+
+.img-responsive-home {
+    width: 100%;
+}
+
+.heading-responsiv-font {
+    font-size: calc((156 /var(--gfs))*100*1vw);
+    line-height: 1;
+}
+
+.heading-responsiv-top-font {
+    font-size: calc((18 /var(--gfs))*100*1vw);
+    line-height: 0.9;
+}
+
+.heading-responsiv-sub-font {
+    font-size: calc((42 / var(--gfs)) * 100 * 1vw);
+    font-weight: 500;
+}
+
+.content-responsive {
+    top: calc((1919 /var(--gfs))*100*1vh);
+
+}
+.downbtn{
+    font-size: calc((24 / var(--gfs)) * 100 * 1vw);
+}
+
+.heading-responsiv-font-content{
+    font-size: calc((95 / var(--gfs)) * 100 * 1vw);
+    line-height: calc((100 / var(--gfs)) * 100 * 1vw);
+    font-weight: 300;
+}
+.under-cointainer{
+    position: relative;
+    top: calc((220 / var(--gfs)) * 100 * 1vw);
+    padding: calc((35 / var(--gfs)) * 100 * 1vw) calc((38 / var(--gfs)) * 100 * 1vw) calc((11 / var(--gfs)) * 100 * 1vw);
+    border-radius: calc((15 / var(--gfs)) * 100 * 1vw);
+}
+
+.card-font{
+    
+    font-size: calc((24 / var(--gfs)) * 100 * 1vw);
+    line-height: 1.38;
+}
+.card-big-font{
+    font-size: calc((188 / var(--gfs)) * 100 * 1vw);
+    line-height: 1.1;
+}
+
+
+.heading-responsiv-top-font-2{
+    font-size: calc((60 / var(--gfs)) * 100 * 1vw);
+}
+.running-font{
+    font-size: calc((250 / var(--gfs)) * 100 * 1vw);
+padding-right:calc((40/var(--gfs))*100*1vw) ;
+}
+.ct-content{
+   display: grid;
+   
+
+}
+.ct-font{
+    font-size: calc((60 / var(--gfs)) * 100 * 1vw);
+    line-height: calc((65 / var(--gfs)) * 100 * 1vw);
+}
+.live-font{
+    margin-bottom: calc((14 / var(--gfs)) * 100 * 1vw);
+    font-size: calc((60 / var(--gfs)) * 100 * 1vw);
+    line-height: calc((65 / var(--gfs)) * 100 * 1vw);
+}
+.sp-width{
+    width: 100%;
+}
+.accordion-font{
+    font-size: calc((38 / var(--gfs)) * 100 * 1vw);
+    line-height: 1;
+}
+.accordion-font-body{
+  
+    font-size: calc((24 / var(--gfs)) * 100 * 1vw);
+    line-height: 1.375;
+    color: #888;
+}
+/* responsive
+
+media 
+
+
+query 
+
+classes
+*/
+
+@media (max-width: 834px) {
+    :root {
+        --gfs: 744;
+        --ps: calc((40 / var(--gfs)) * 100 * 1vw);
+    }
+
+}
+
+@media (max-width: 520px) {
+    :root {
+        --gfs: 375;
+        --ps: calc((10 / var(--gfs)) * 100 * 1vw);
+    }
+
+    :root {
+        --gfsh: 450;
+    }
+
+}
+
+@media (max-width: 834px) {
+    :root {
+        --gap-content: calc((20 / var(--gfs)) * 100 * 1vw);
+    }
+
+}
+
+@media (max-width: 520px) {
+    :root {
+        --gap-content: calc((10 / var(--gfs)) * 100 * 1vw);
+    }
+
+}
+
+
+
+@media (max-width:1281) {
+    .heading-responsiv-font {
+        font-size: calc((20 / var(--gfs))*100*1vw);
+        line-height: calc((100 / var(--gfs))*100*1vw);
+    }
+
+    .img-responsive-home {
+        height: calc((1000/var(--gfs))*100*1vw);
+    }
+
+    .content-responsive {
+        top: calc((1000/var(--gfs))*100*1vh);
+    }
+}
+
+
+/* respnsive
+
+
+media query
+
+
+
+*/
+@media screen and (min-width:1024) {
+    .content-responsive {
+        top: calc((1124/var(--gfs))*100*1vh);
+    }
+}
+
+@media (max-width: 834px) {
+   
+
+    .heading-responsiv-font {
+        font-size: calc((82 / var(--gfs)) * 100 * 1vw);
+        line-height: 0.9;
+
+    }
+
+    .heading-responsiv-top-font {
+        font-size: calc((15 /var(--gfs))*100*1vw);
+        line-height: 0.9;
+    }
+
+    .img-responsive-home {
+        height: calc((1000/var(--gfs))*100*1vw);
+    }
+
+    .content-responsive {
+        top: calc((744/var(--gfs))*100*1vh);
+    }
+
+    .heading-responsiv-sub-font {
+        font-size: calc((36 / var(--gfs)) * 100 * 1vw);
+    }
+
+    .bt-0 {
+        display: -ms-grid;
+        display: grid;
+    }
+
+   
+    .bt-0 {
+        display: -ms-grid;
+        display: grid;
+        bottom: calc((20 / var(--gfs)) * 100 * 1vw);
+        line-height: 0.9;
+
+    }
+
+    .sub-cointainer {
+        display: -ms-grid;
+        display: grid;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        bottom: calc((30 / var(--gfs)) * 100 * 1vw);
+
+    }
+    .downbtn{
+        width: calc((250 / var(--gfs)) * 100 * 1vw);
+        padding:calc((10 / var(--gfs)) * 100 * 1vw);
+        font-size: calc((18 / var(--gfs)) * 100 * 1vw);
+
+    }
+    .sub-cointainer-main{
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: start;
+    }
+    .heading-responsiv-font-content{
+        font-size: calc((36 / var(--gfs)) * 100 * 1vw);
+    line-height: calc((50 / var(--gfs)) * 100 * 1vw);
+    }
+    .heading-responsiv-top-font-2{
+        font-size: calc((36 / var(--gfs)) * 100 * 1vw);
+    }
+    .card-font{
+        font-size: calc((20 / var(--gfs)) * 100 * 1vw);
+    }
+    .card-big-font{
+        font-size: calc((64 / var(--gfs)) * 100 * 1vw);
+    }
+    .card-coustm{
+        height: calc((600 / var(--gfs)) * 100 * 1vw);
+        
+    }
+    .img-responsive-second{
+        height: calc((500/var(--gfs))*100*1vw);
+        line-height: 1;
+    }
+    .running-font{
+        font-size: calc((100 / var(--gfs)) * 100 * 1vw);
+    padding-right:calc((28/var(--gfs))*100*1vw) ;
+    }
+    .under-cointainer{
+   
+        top: calc((305 / var(--gfs)) * 100 * 1vw);
+        padding: calc((35 / var(--gfs)) * 100 * 1vw) calc((38 / var(--gfs)) * 100 * 1vw) calc((11 / var(--gfs)) * 100 * 1vw);
+        border-radius: calc((15 / var(--gfs)) * 100 * 1vw);
+    }
+    .ct-font{
+    font-size: calc((36 / var(--gfs)) * 100 * 1vw);
+    line-height: calc((37 / var(--gfs)) * 100 * 1vw);
+    }
+    .live-font{
+        margin-bottom: calc((10 / var(--gfs)) * 100 * 1vw);
+    font-size: calc((28 / var(--gfs)) * 100 * 1vw);
+    line-height: calc((36 / var(--gfs)) * 100 * 1vw);
+    }
+    .accordion-font{
+        font-size: calc((20 / var(--gfs)) * 100 * 1vw);
+    }
+    .accordion-font-body{
+        font-size: max(12px, calc((12 / var(--gfs)) * 100 * 1vw)); }
+}
+@media (min-width:910px){
+.coustm-padding{
+    width: 33.33%!important;
+} }
+/* @media (max-width:540px){
+   .coustm-padding{
+ padding:    calc((31 / var(--gfs)) * 100 * 1vw) calc((106 / var(--gfs)) * 100 * 1vw) calc((6 / var(--gfs)) * 100 * 1vw);
+   } 
+} */
+
+
+
+@media (max-width: 520px) {
+    .heading-responsiv-font {
+        font-size: calc((55 / var(--gfs)) * 100 * 1vw);
+        line-height: 0.9;
+
+    }
+
+    .img-responsive-home {
+        height: calc((1000/var(--gfs))*100*1vw);
+        line-height: 1;
+    }
+
+    .content-responsive {
+         top:0; 
+         position: absolute;
+    } 
+    
+
+    .heading-responsiv-top-font {
+        font-size: calc((11 /var(--gfs))*100*1vw);
+        line-height: 0.9;
+        font-weight: 700;
+    }
+
+    .heading-responsiv-sub-font {
+        font-size: calc((18 / var(--gfs)) * 100 * 1vw);
+        
+    }
+
+    .bt-0 {
+        display: -ms-grid;
+        display: grid;
+        bottom: calc((70 / var(--gfs)) * 100 * 1vw);
+        line-height: 2;
+
+    }
+
+    .sub-cointainer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        bottom: calc((70 / var(--gfs)) * 100 * 1vw);
+        line-height: 2;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: start;
+    }
+    .downbtn{
+        width: calc((130 / var(--gfs)) * 100 * 1vw);
+        padding:calc((10 / var(--gfs)) * 100 * 1vw);
+        font-size: calc((10 / var(--gfs)) * 100 * 1vw);
+
+    }
+   .contactbtn{
+    width: calc((78 / var(--gfs)) * 100 * 1vw);
+    color: currentcolor;
+    padding: calc((9 / var(--gfs)) * 100 * 1vw);
+
+    font-size: calc((12 / var(--gfs)) * 100 * 1vw);
+    line-height: 1;
+   }
+   .sub-cointainer-main{
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+}
+.heading-responsiv-font-content{
+    font-size: calc((24 / var(--gfs)) * 100 * 1vw);
+    line-height: calc((25 / var(--gfs)) * 100 * 1vw);
+}
+.heading-responsiv-top-font-2{
+    font-size: calc((24 / var(--gfs)) * 100 * 1vw);
+}
+.card-coustm{
+    height: calc((360 / var(--gfs)) * 100 * 1vw);
+    padding: calc((10 / var(--gfs)) * 100 * 1vw) calc((14 / var(--gfs)) * 100 * 1vw) 0 calc((12 / var(--gfs)) * 100 * 1vw);
+}
+.under-cointainer{
+   
+    top: calc((40 / var(--gfs)) * 100 * 1vw);
+    padding: calc((35 / var(--gfs)) * 100 * 1vw) calc((38 / var(--gfs)) * 100 * 1vw) calc((11 / var(--gfs)) * 100 * 1vw);
+    border-radius: calc((15 / var(--gfs)) * 100 * 1vw);
+}
+.card-font{
+    font-size: max(12px, calc((14 / var(--gfs)) * 100 * 1vw));
+
+}
+.card-big-font{
+    font-size: calc((99 / var(--gfs)) * 100 * 1vw);
+    line-height:1;
+}
+
+
+.running-font{
+    font-size: calc((64 / var(--gfs)) * 100 * 1vw);
+padding-right:calc((15/var(--gfs))*100*1vw) ;
+}
+.content-hight{
+    height: calc((800/ var(--gfs)) * 100 * 1vw);
+}
+.ct-content{
+    display: flex;
+   
+}
+.ct-font{
+    margin-bottom: calc((30 / var(--gfs)) * 100 * 1vw);
+    font-size: calc((24 / var(--gfs)) * 100 * 1vw);
+    line-height: 2;
+}
+.live-font{
+    font-size: calc((24 / var(--gfs)) * 100 * 1vw);
+    line-height: calc((26 / var(--gfs)) * 100 * 1vw);
+}
+.sp-width{
+    width: 50%;
+}
+.accordion-font{
+    font-size: calc((16 / var(--gfs)) * 100 * 1vw);
+}
+.accordion-font-body{
+    padding-bottom: calc((23 / var(--gfs)) * 100 * 1vw);
+}
+}
